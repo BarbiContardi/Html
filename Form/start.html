@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Formulario</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Formulario</h1>
+    <form>
+      <label for="email">Correo Electronico:</label>
+      <input type="email" name="email" />
+      <label for="password">Contraseña:</label>
+      <input type="password" name="password" />
+      <label for="first&last_name">Nombre y apellido:</label>
+      <input type="text" name="first&last_name" />
+      <label for="date">Fecha Nacimiento:</label>
+      <input type="date" name="date" />
+      <label for="phone_number">Numero de telefono:</label>
+      <input type="number" name="phone_number" />
+      <label for="plan">Escoga su plan:</label>
+      <select name="plan" id="plan">
+        <option value="plan1">Plan gratuito $0</option>
+        <option value="plan1">Plan inicial $5</option>
+        <option value="plan1">Plan intermedio $10</option>
+        <option value="plan1">Plan senior $15</option>
+      </select>
+      <label for="suscribed">Plan PRO</label>
+      <input type="checkbox" name="suscribed" />
+      <label for="tarjeta">Numero de tarjeta de credito:</label>
+      <input type="text" name="tarjeta" maxlength="16"/>
+      <label for="keys">CVC:</label>
+      <input type="password" name="keys" maxlength="3" />
+      <label for="fecha-vencimiento">Fecha de caducidad (MM/YY):</label>
+      <input
+        type="month"
+        id="fecha-vencimiento"
+        name="fecha-vencimiento"
+        min="2023-05"
+        required
+      />
+      <label for="adress">Direccion de envío:</label>
+      <input type="text" name="adress" />
+      <div>
+      <button type="submit">Enviar</button>
+    </div>
+    </form>
+  </body>
+</html>
